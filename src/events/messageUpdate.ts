@@ -12,7 +12,6 @@ export default class extends Event {
 	}
 
 	async run(oldMessage: KlasaMessage, newMessage: KlasaMessage) {
-		if(oldMessage.author.bot) return;
 		if(!(oldMessage.content || newMessage.content)) return;
 		if(oldMessage.content === newMessage.content) return;
 
